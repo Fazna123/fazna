@@ -1,0 +1,494 @@
+*{
+    margin: none;
+    padding: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(236, 231, 231);
+    color:rgb(26, 20, 20);
+    text-decoration: none;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 2px 6%;
+    position:sticky;
+    top:0px;
+    z-index:100;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    
+}
+.logo img{
+    width:30px;
+    margin-right: 15px;
+    display :block;
+   
+}
+.firsttopbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.linkedinlogin input{
+
+    outline: none;
+    border:none;
+    background: transparent;
+    padding:8px;
+    
+}
+.linkedinlogin{
+    width:100;
+    height:30px;
+    display:flex;
+    align-items: center;
+    background: rgb(236, 233, 233);
+    padding:5px;
+    border-radius:6px;
+}
+.linkedinlogin img{
+    width:14px;
+}
+
+.secondtopbar ul li{
+    display:inline-block;
+    list-style:none;
+    
+}
+.secondtopbar ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:5px 10px;
+    padding-right: 5px;
+    text-decoration: none;
+    position: relative;
+}
+.secondtopbar ul li a img{
+    width:50px;
+
+}
+.secondtopbar ul li a::after{
+    content: '';
+    width:0px;
+    height: 2px;
+    background: black;
+    position :absolute;
+    bottom: -15px;
+    transition:width 0.3s;
+}
+.secondtopbar ul li a:hover::after, .secondtopbar ul li a.active::after{
+    width: 100%;
+}
+
+.thirdtopbar .profile-image{
+    width:50px;
+    border-radius: 50%;
+    border-color: rgb(14, 9, 9);
+    display: block;
+    cursor: pointer;
+    position: relative;
+
+}
+.onlinetag{
+    position:relative;
+}
+.onlinetag::after{
+    content: '';
+    width:10px;
+    height:10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    right:0px;
+    top:0px;
+    background:green;
+    position:absolute;
+}
+
+/*..............................................................................*/
+
+.contentsection{
+    padding:20px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.leftcoloumn{
+    flex-basis: 25%;
+    align-self: flex-start;
+    position:sticky;
+    top:80px;
+}
+.profilebox{
+    background:white;
+    /*border: 1px solid rgb(161, 160, 160,0.7);*/
+    border-radius: 4px;
+
+}
+
+.profilesection{
+    padding:0 25px;
+}
+
+.profilesection img{
+    width:90px;
+    border-radius: 50%;
+    background:white;
+    padding:4px;
+    margin-top:-50px;
+    margin-left:25%;
+}
+.profilesection h1{
+    font-size: 30px;
+    font-weight: 600;
+    color:black;
+    
+}
+
+.profilesection h3{
+    font-size: 20px;
+    font-weight: 500;
+    color:rgb(46, 44, 44);
+}
+.profilesection ul{
+    list-style: none;
+    margin:20px 0;
+}
+.profilesection ul li{
+    width:100%;
+    margin:5px 0;
+    font-size:15px;
+}
+.profilesection ul li span{
+    float:right;
+    color:blue;
+}
+.premium{
+   
+    display:flex;
+    align-items: flex-start;
+    border-top:1px solid rgba(201, 197, 197, 0.7);
+    padding:20px;
+    font-size:13px;
+    justify-content: center;
+    vertical-align: middle;
+}
+.premium img{
+    width:40px;
+}
+.myitems{
+ 
+    display:flex;
+    align-items: flex-start;
+    border-top:1px solid rgba(201, 197, 197, 0.7); 
+    padding:10px  60px;
+    font-size:13px;
+    justify-content: left;
+    vertical-align: middle;
+    
+}
+.myitems h5{
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:300;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.activities{
+    background: white;
+    padding:5px 25px;
+    margin: 20px 0;
+}
+.activities h3{
+    position: relative;
+    color:rgb(58, 57, 57);
+    font-size: 16px;
+    font-weight:500;
+    margin: 20px 0 10px;
+}
+.activities a{
+    display:flex;
+    font-size: 14px;
+    align-items: center;
+    font-weight: 500;
+    color: rgb(94, 90, 90);
+    margin:5px o;
+    text-decoration: none;
+}
+.activities img{
+    width:20px;
+    margin-right: 10px;
+}
+.discover{
+    background: white;
+    border-top:1px solid rgba(201, 197, 197, 0.7);
+    text-align: center;
+    display: block;
+    padding: 18px;
+    margin-top: 20px;
+    margin-left: -25px;
+    margin-right: -25px;
+}
+.discover a{
+    display:inline-block;
+    font-size: 14px;
+    align-items: center;
+    font-weight: 500;
+    color: rgb(94, 90, 90);
+    margin:10px o;
+    text-decoration: none;
+   
+}
+
+
+
+
+
+
+/*.............*/
+
+.rightcoloumn{
+    flex-basis: 25%;
+    align-self: flex-start;
+    position:sticky;
+    top:80px;
+}  
+.news{
+    background: white;
+    padding: 10px 30px;
+}
+.info{
+    width:20px;
+    float:right;
+    margin-top:25px;  
+}
+.news ul li{
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.news ul span{
+    color:rgb(77, 74, 74);
+    font-size: 12px;
+    font-weight: 300;
+}
+.news .showmore{
+    margin: 30px;
+    color:rgb(43, 36, 36);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+.advertisement{
+    background: white;
+    margin-top:12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    padding: 15px;
+}
+.advertisement small{
+    float:right;
+    margin-right: 0;
+}
+.advertisement img{
+    width:100px;
+}
+.advertisement button{
+    background: white;
+    border: 1px solid blue;
+    width:auto;
+    font-size: 18px;
+    border-radius: 25px;
+    padding: 0 20px;
+    color:rgb(102, 102, 199);
+    font-weight: 500;
+}
+.links{
+    margin-top: 20px;
+    align-items: center;
+    text-indent: 10%;
+    justify-content: center;
+}
+.links a{
+    text-decoration: none;
+    color:rgb(112, 111, 111);
+    display: inline block;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+.corportn{
+    margin-top: 20px;
+    color:rgb(112, 111, 111);
+    padding-left: 10px;
+}
+
+
+
+
+
+.maincoloumn{
+    flex-basis: 46%;
+
+}
+.posts{
+    background: white;
+}
+.createpost{
+    padding:10px 25px 10px;
+    display:flex;
+    align-items: flex-start;
+}
+.createpost img{
+    width:30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    outline:1px solid grey;
+    margin-top: 8px;
+    
+}
+.createpost textarea{
+    width:100%;
+    border-top:1px solid rgba(201, 197, 197, 0.7);
+    border-radius:20px;
+    outline:none;
+    background: transparent;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+::placeholder{
+    font-size: 14px;
+    padding-left: 10px;
+}
+.postlinks{
+    display:flex;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+.postlinks li{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-basis: 50%;
+    height: 40px;
+    font-size: 13px;
+}
+.postlinks li img{
+    width:40px;
+    margin-right: 5px;
+}
+.sortby{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.sortby hr{
+    flex: 1;
+    border: 0;
+    height: 1px;
+    background: rgb(124, 90, 90);
+}
+.sortby p{
+    font-size: 13px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.newposts{
+    background: white;
+    padding:20px 25px 5px;
+    margin:5px 0 15px;
+}
+
+.author{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+}
+.author img{
+    width:50px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.author h1{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(2, 2, 2);
+    margin-bottom: 2px;
+}
+.author small{
+    display:block;
+    margin-bottom:-2px;
+    color: gray;
+}
+.newposts p{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.poststatus{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    border-bottom:1px solid rgba(201, 197, 197, 0.7);
+    padding-bottom: 6px;
+    margin-top: 10px;
+}
+.poststatus div{
+    display: flex;
+    align-items: center;
+}
+.poststatus img{
+    width: 15px;
+    margin-right: -5px;
+}
+.likeduser{
+    margin-left: 10px;
+}
+.activityicons{
+    display:flex;
+    flex-basis: 20%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0;
+    padding:10px 0;
+}
+.activityicons img{
+    width:30px;
+    align-items: center;
+    
+}
+.activityicons span{
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+.showmorebutton button{
+    width:100%;
+    padding:13px;
+    border:1px solid rgb(189, 186, 186);
+    border-radius:20px;
+    background: transparent;
+    cursor:pointer;
+}
